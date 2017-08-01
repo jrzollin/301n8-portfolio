@@ -1,1 +1,17 @@
+html {
+  width: 100%;
+  /*border: 1px solid black;*/
+}
 
+body {
+  width: 100%;
+  /*border: 1px solid black;*/
+}
+
+div {
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 50px;
+}
