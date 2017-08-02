@@ -1,0 +1,48 @@
+#header {
+  width: 80%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+
+h1 {
+  width: 80%;
+  margin: 10px auto;
+}
+
+#nav {
+  padding-bottom: 2em;
+  width: 78%;
+  margin: auto;
+}
+
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+li {
+  display: inline;
+  margin-left: .3em;
+}
+
+.show-menu, .hide-menu {
+  margin-left: 4em;
+}
+
+.about-me {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+p {
+  text-align: center;
+  margin: 1em;
+}
+
+.projects {
+  width: 80%;
+  margin: auto;
+  height: 4em;
+}

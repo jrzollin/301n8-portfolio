@@ -3,17 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>James' Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="modules.css">
+    <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="styles/modules.css">
   </head>
   <body>
     <div id="header">
-      <section id="image-placeholder">
-      </section>
       <h1>James Zollin</h1>
+      <section id="nav">
+        <ul>
+          <li id="menu-about">About</li>
+          <li id="menu-projects">Projects</li>
+          <li id="menu-contact">Contact Info</li>
+        </ul>
+        <a href=# class="show-menu">Show Menu</a>
+      </section>
     </div>
-
+    <div class="about-me">
+      <p>I am a 36 year old aspiring progammer currently living in the Seattle area.  A little while ago I felt it was time for a change in my life and decided to put my GI Bill to use.  So now I've started my journey into the world of programming.</p>
+    </div>
+    <div class="projects">
+    </div>
+    <script src="vendor/scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>

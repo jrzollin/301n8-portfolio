@@ -1,0 +1,27 @@
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+div {
+  border: 3px solid black;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+ul {
+  font-size: 1em;
+}
+
+a {
+  font-size: 1em;
+}
+
+p {
+  font-size: 2em;
+}

@@ -1,0 +1,12 @@
+ul {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.show-menu, .hide-menu {
+  text-decoration: none;
+  color: black;
+}
