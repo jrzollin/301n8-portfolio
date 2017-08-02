@@ -1,11 +1,9 @@
 html {
   width: 100%;
-  /*border: 1px solid black;*/
 }
 
 body {
   width: 100%;
-  /*border: 1px solid black;*/
 }
 
 div {
@@ -13,5 +11,13 @@ div {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 7em;
+}
+
+ul {
+  font-size: 3em;
+}
+
+a {
+  font-size: 2em;
 }

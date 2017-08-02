@@ -1,5 +1,12 @@
-#header {
-  width: 95%;
-  margin: auto;
-  border: 1px solid black;
+ul {
+  /*display: none;*/
+}
+
+h1 {
+  text-align: center;
+}
+
+.show-menu {
+  text-decoration: none;
+  color: black;
 }
