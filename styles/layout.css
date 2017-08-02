@@ -25,6 +25,6 @@ li {
   margin-left: .3em;
 }
 
-.show-menu {
+.show-menu, .hide-menu {
   margin-left: 7em;
 }
