@@ -4,6 +4,7 @@ html {
 
 body {
   width: 100%;
+  font-size: 100%;
 }
 
 div {
@@ -11,17 +12,20 @@ div {
 }
 
 h1 {
-  font-size: 7em;
+  font-size: 3em;
 }
 
 ul {
-  font-size: 1em;
+}
+
+li {
+  font-size: 1.5em;
 }
 
 a {
-  font-size: 1em;
+  font-size: 100%;
 }
 
 p {
-  font-size: 2em;
+  font-size: 100%;
 }

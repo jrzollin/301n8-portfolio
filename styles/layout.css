@@ -6,34 +6,39 @@
 }
 
 h1 {
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
 }
 
 #nav {
   padding-bottom: 2em;
-  width: 78%;
+  width: 90%;
   margin: auto;
 }
 
 ul {
+  display: inline;
   margin-top: 1em;
   margin-bottom: 1em;
+  width: 100%;
+  margin-left:5%;
 }
 
 li {
   display: inline;
-  margin-left: .3em;
+  width: 30%;
+  margin-left: 2%;
 }
 
 .show-menu, .hide-menu {
-  margin-left: 4em;
+  margin-left: 35%;
 }
 
 .about-me {
   width: 80%;
   margin: auto;
   margin-bottom: 3em;
+  /*display: none;*/
 }
 
 p {
