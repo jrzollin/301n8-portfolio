@@ -15,9 +15,13 @@ h1 {
 }
 
 ul {
-  font-size: 3em;
+  font-size: 1em;
 }
 
 a {
+  font-size: 1em;
+}
+
+p {
   font-size: 2em;
 }

@@ -2,6 +2,7 @@
   width: 80%;
   margin: auto;
   margin-top: 5em;
+  margin-bottom: 3em;
 }
 
 h1 {
@@ -26,5 +27,22 @@ li {
 }
 
 .show-menu, .hide-menu {
-  margin-left: 7em;
+  margin-left: 4em;
+}
+
+.about-me {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+p {
+  text-align: center;
+  margin: 1em;
+}
+
+.projects {
+  width: 80%;
+  margin: auto;
+  height: 4em;
 }
