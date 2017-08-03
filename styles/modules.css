@@ -10,3 +10,15 @@ h1 {
   text-decoration: none;
   color: black;
 }
+
+.menu-button {
+  border: none;
+}
+
+.about-me {
+  /*display: none;*/
+}
+
+.projects {
+  /*display: none;*/
+}
