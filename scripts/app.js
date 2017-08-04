@@ -22,6 +22,10 @@ Project.prototype.addToProjects = function(){
 var salmonCookies = new Project('Salmon Cookies', 'images/salmon.png', '<p>This project involved setting up a cookie store with several locations.  Each store tracked the number of cookies sold and tallied the totals in a table.</p>', 'https://github.com/jrzollin/cookie-stand');
 
 var busMall = new Project('Bus Mall', 'images/vault-tec.png', '<p>This project involved setting up a survey where you would click on one of three randomly generated images out of a pool.  The images tracked how many times they were shown and how many times they were clicked.  The results were displayed on a chart.', 'https://github.com/jrzollin/bus-mall');
+
+//adding projects to the DOM
+
+
 //header functions==============================================================
 
 var headerFunctions = {};
@@ -54,11 +58,11 @@ headerFunctions.showAbout = function(){
   $('#menu-about').on('click', function(e){
     e.preventDefault();
     if($('.projects').is(':visible') || $('.contact').is(':visible')){
-      $('.projects').fadeOut(1000);
-      $('.contact').fadeOut(1000);
-      $('.about-me').delay(1000).fadeIn(1000);
+      $('.projects').fadeOut(500);
+      $('.contact').fadeOut(500);
+      $('.about-me').delay(500).fadeIn(500);
     } else {
-      $('.about-me').fadeIn(1000);
+      $('.about-me').fadeIn(500);
     }
   });
 }
@@ -68,11 +72,11 @@ headerFunctions.showProjects = function(){
   $('#menu-projects').on('click', function(e){
     e.preventDefault();
     if($('.about-me').is(':visible') || $('.contact').is(':visible')){
-      $('.about-me').fadeOut(1000);
-      $('.contact').fadeOut(1000);
-      $('.projects').delay(1000).fadeIn(1000);
+      $('.about-me').fadeOut(500);
+      $('.contact').fadeOut(500);
+      $('.projects').delay(500).fadeIn(500);
     } else {
-      $('.projects').fadeIn(1000);
+      $('.projects').fadeIn(500);
     }
   });
 }
@@ -82,11 +86,11 @@ headerFunctions.showContact = function(){
   $('#menu-contact').on('click', function(e){
     e.preventDefault();
     if($('.about-me').is(':visible') || $('.projects').is(':visible')){
-      $('.about-me').fadeOut(1000);
-      $('.projects').fadeOut(1000);
-      $('.contact').delay(1000).fadeIn(1000);
+      $('.about-me').fadeOut(500);
+      $('.projects').fadeOut(500);
+      $('.contact').delay(500).fadeIn(500);
     } else {
-      $('.contact').fadeIn(1000);
+      $('.contact').fadeIn(500);
     }
   });
 }
