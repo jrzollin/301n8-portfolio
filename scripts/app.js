@@ -1,24 +1,37 @@
 'use strict';
 
+//projects======================================================================
+
 var projects = [];
 
-function Project(name, image, description){
+//project constructor
+function Project(name, image, description, link){
   this.name = name;
   this.image = image;
   this.description = description;
+  this.link = link;
   this.addToProjects();
 }
 
+//push new project to projects array
 Project.prototype.addToProjects = function(){
   projects.push(this);
 }
 
+//project variables
+var salmonCookies = new Project('Salmon Cookies', 'images/salmon.png', '<p>This project involved setting up a cookie store with several locations.  Each store tracked the number of cookies sold and tallied the totals in a table.</p>', 'https://github.com/jrzollin/cookie-stand');
+
+var busMall = new Project('Bus Mall', 'images/vault-tec.png', '<p>This project involved setting up a survey where you would click on one of three randomly generated images out of a pool.  The images tracked how many times they were shown and how many times they were clicked.  The results were displayed on a chart.', 'https://github.com/jrzollin/bus-mall');
+//header functions==============================================================
+
 var headerFunctions = {};
 
+//delay header showing until tree gif finishes
 headerFunctions.showHeader = function(){
   $('#header').delay(2000).fadeIn(1000);
 }
 
+//toggle nav menu to show
 headerFunctions.showMenu = function(){
   $('#nav').on('click', '.show-menu', function(e){
     e.preventDefault();
@@ -27,6 +40,7 @@ headerFunctions.showMenu = function(){
   });
 }
 
+//toggle nav menu to hide
 headerFunctions.hideMenu = function(){
   $('#nav').on('click', '.hide-menu' ,function(e){
     e.preventDefault();
@@ -35,6 +49,7 @@ headerFunctions.hideMenu = function(){
   });
 }
 
+//show about section, checks for and hides any other section showing first
 headerFunctions.showAbout = function(){
   $('#menu-about').on('click', function(e){
     e.preventDefault();
@@ -48,6 +63,7 @@ headerFunctions.showAbout = function(){
   });
 }
 
+//show projects section, checks for and hides any other section showing first
 headerFunctions.showProjects = function(){
   $('#menu-projects').on('click', function(e){
     e.preventDefault();
@@ -61,6 +77,7 @@ headerFunctions.showProjects = function(){
   });
 }
 
+//show contact section, checks for and hides any other section showing first
 headerFunctions.showContact = function(){
   $('#menu-contact').on('click', function(e){
     e.preventDefault();
@@ -74,6 +91,7 @@ headerFunctions.showContact = function(){
   });
 }
 
+//call header functions
 $(document).ready(function(){
   headerFunctions.showHeader();
   headerFunctions.showMenu();

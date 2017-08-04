@@ -1,12 +1,16 @@
 ul {
   display: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
   text-align: center;
 }
 
 .show-menu, .hide-menu, a {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: black;
 }
@@ -16,10 +20,12 @@ h1 {
 }
 
 .about-me {
+  font-family: 'Roboto', sans-serif;
   display: none;
 }
 
 .projects, .contact {
+  font-family: 'Roboto', sans-serif;
   background-color: white;
   display: none;
 }
