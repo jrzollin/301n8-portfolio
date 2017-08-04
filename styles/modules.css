@@ -16,9 +16,20 @@ h1 {
 }
 
 .about-me {
-  /*display: none;*/
+  display: none;
 }
 
-.projects {
-  /*display: none;*/
+.projects, .contact {
+  background-color: white;
+  display: none;
+}
+
+#header {
+  display: none;
+}
+
+#header, .about-me, .projects, .contact {
+  background-color: white;
+  background-image: url("images/border.png");
+  background-size: 100% 100%;
 }

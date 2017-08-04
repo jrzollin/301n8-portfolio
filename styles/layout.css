@@ -42,10 +42,10 @@ li {
 
 p {
   text-align: center;
-  margin: 1em;
+  margin: 2em;
 }
 
-.projects {
+.projects, .contact {
   width: 80%;
   margin: auto;
   height: 4em;
