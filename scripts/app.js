@@ -67,6 +67,15 @@ headerFunctions.showAbout = function(){
   });
 }
 
+headerFunctions.showSection = function(){
+  $('#nav li').on('click', function(e){
+    e.preventDefault();
+    var selected = $(this).attr('id');
+    $('.tab-content:not(.' + selected + ')').fadeOut(500);
+    $('.tab-content').is(':visible') ? $('.' + selected).delay(500).fadeIn(500) : $('.' + selected).fadeIn(500);
+  });
+}
+
 //show projects section, checks for and hides any other section showing first
 headerFunctions.showProjects = function(){
   $('#menu-projects').on('click', function(e){
@@ -100,7 +109,8 @@ $(document).ready(function(){
   headerFunctions.showHeader();
   headerFunctions.showMenu();
   headerFunctions.hideMenu();
-  headerFunctions.showAbout();
-  headerFunctions.showProjects();
-  headerFunctions.showContact();
+  // headerFunctions.showAbout();
+  // headerFunctions.showProjects();
+  // headerFunctions.showContact();
+  headerFunctions.showSection();
 });
