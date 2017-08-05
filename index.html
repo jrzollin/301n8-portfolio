@@ -2,28 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>James' Portfolio</title>
     <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/layout.css">
     <link rel="stylesheet" type="text/css" href="styles/modules.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <div id="header">
       <h1>James Zollin</h1>
       <section id="nav">
         <ul>
-          <li id="menu-about">About</li>
-          <li id="menu-projects">Projects</li>
-          <li id="menu-contact">Contact Info</li>
+          <li id="about-me"><a href=#>About</a></li>
+          <li id="projects"><a href=#>Projects</a></li>
+          <li id="contact"><a href=#>Contact</a></li>
         </ul>
-        <a href=# class="show-menu">Show Menu</a>
+        <div class="menu-button"><a href=# class="show-menu">Show Menu</a></div>
       </section>
     </div>
-    <div class="about-me">
+    <div class="about-me tab-content">
       <p>I am a 36 year old aspiring progammer currently living in the Seattle area.  A little while ago I felt it was time for a change in my life and decided to put my GI Bill to use.  So now I've started my journey into the world of programming.</p>
+      <p>Currently I am learning to use HTML, CSS, JavaScript and JQuery.</p>
     </div>
-    <div class="projects">
+    <div class="projects tab-content">
+    </div>
+    <div class="contact tab-content">
+      <a href="mailto: jrzollin@yahoo.com" id="email">Email: jrzollin@yahoo.com</a>
+      <a href="https://github.com/jrzollin" id="github">GitHub</a>
     </div>
     <script src="vendor/scripts/jquery-3.2.1.js"></script>
     <script src="scripts/app.js"></script>

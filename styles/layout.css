@@ -1,33 +1,38 @@
 #header {
   width: 80%;
   margin: auto;
-  margin-top: 5em;
+  margin-top: 4em;
   margin-bottom: 3em;
 }
 
 h1 {
-  width: 80%;
-  margin: 10px auto;
+  width: 90%;
+  margin: .8em auto;
 }
 
 #nav {
   padding-bottom: 2em;
-  width: 78%;
+  width: 90%;
   margin: auto;
 }
 
 ul {
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 li {
   display: inline;
-  margin-left: .3em;
+  margin-left: .1em;
+  margin-right: .1em;
 }
 
-.show-menu, .hide-menu {
-  margin-left: 4em;
+.menu-button {
+  width: 38%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1.5em;
 }
 
 .about-me {
@@ -38,11 +43,23 @@ li {
 
 p {
   text-align: center;
-  margin: 1em;
+  margin: 2em;
 }
 
-.projects {
+.projects, .contact {
   width: 80%;
   margin: auto;
-  height: 4em;
+  height: 5em;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#email, #github{
+  display: block;
+  width: 96%;
+  margin: auto;
+  margin-top: 1em;
 }
