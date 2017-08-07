@@ -49,7 +49,7 @@ p {
 .projects, .contact {
   width: 80%;
   margin: auto;
-  height: 5em;
+  /*height: 5em;*/
 }
 
 .contact {
@@ -62,4 +62,9 @@ p {
   width: 96%;
   margin: auto;
   margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.template {
+  display: none;
 }

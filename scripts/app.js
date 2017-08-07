@@ -11,6 +11,7 @@ function Project(name, image, description, link){
   this.description = description;
   this.link = link;
   this.addToProjects();
+  this.displayProject();
 }
 
 //push new project to projects array
@@ -18,12 +19,23 @@ Project.prototype.addToProjects = function(){
   projects.push(this);
 }
 
-//project variables
-var salmonCookies = new Project('Salmon Cookies', 'images/salmon.png', '<p>This project involved setting up a cookie store with several locations.  Each store tracked the number of cookies sold and tallied the totals in a table.</p>', 'https://github.com/jrzollin/cookie-stand');
-
-var busMall = new Project('Bus Mall', 'images/vault-tec.png', '<p>This project involved setting up a survey where you would click on one of three randomly generated images out of a pool.  The images tracked how many times they were shown and how many times they were clicked.  The results were displayed on a chart.', 'https://github.com/jrzollin/bus-mall');
-
 //adding projects to the DOM
+Project.prototype.displayProject = function () {
+  var $project = $('section.template').clone();
+  $project.find('h2').text(this.name);
+  $project.find('img').attr('src', this.image);
+  $project.find('p').text(this.description);
+  $project.find('a').attr('href', this.link);
+  $project.removeClass('template');
+  $('.projects').append($project);
+
+};
+
+//project variables
+var salmonCookies = new Project('Salmon Cookies', 'images/salmon.png', 'This was a school project which involved setting up a cookie store with several locations.  Each store tracked the number of cookies sold and tallied the totals in a table.', 'https://github.com/jrzollin/cookie-stand');
+
+var busMall = new Project('Bus Mall', 'images/vault-tec.png', 'This was a school project which involved setting up a survey where you would click on one of three randomly generated images out of a pool.  The images tracked how many times they were shown and how many times they were clicked.  The results were displayed on a chart.', 'https://github.com/jrzollin/bus-mall');
+
 
 
 //header functions==============================================================
@@ -53,20 +65,7 @@ headerFunctions.hideMenu = function(){
   });
 }
 
-//show about section, checks for and hides any other section showing first
-headerFunctions.showAbout = function(){
-  $('#menu-about').on('click', function(e){
-    e.preventDefault();
-    if($('.projects').is(':visible') || $('.contact').is(':visible')){
-      $('.projects').fadeOut(500);
-      $('.contact').fadeOut(500);
-      $('.about-me').delay(500).fadeIn(500);
-    } else {
-      $('.about-me').fadeIn(500);
-    }
-  });
-}
-
+//show each section, checks for and removes previously displayed section
 headerFunctions.showSection = function(){
   $('#nav li').on('click', function(e){
     e.preventDefault();
@@ -76,41 +75,10 @@ headerFunctions.showSection = function(){
   });
 }
 
-//show projects section, checks for and hides any other section showing first
-headerFunctions.showProjects = function(){
-  $('#menu-projects').on('click', function(e){
-    e.preventDefault();
-    if($('.about-me').is(':visible') || $('.contact').is(':visible')){
-      $('.about-me').fadeOut(500);
-      $('.contact').fadeOut(500);
-      $('.projects').delay(500).fadeIn(500);
-    } else {
-      $('.projects').fadeIn(500);
-    }
-  });
-}
-
-//show contact section, checks for and hides any other section showing first
-headerFunctions.showContact = function(){
-  $('#menu-contact').on('click', function(e){
-    e.preventDefault();
-    if($('.about-me').is(':visible') || $('.projects').is(':visible')){
-      $('.about-me').fadeOut(500);
-      $('.projects').fadeOut(500);
-      $('.contact').delay(500).fadeIn(500);
-    } else {
-      $('.contact').fadeIn(500);
-    }
-  });
-}
-
 //call header functions
 $(document).ready(function(){
   headerFunctions.showHeader();
   headerFunctions.showMenu();
   headerFunctions.hideMenu();
-  // headerFunctions.showAbout();
-  // headerFunctions.showProjects();
-  // headerFunctions.showContact();
   headerFunctions.showSection();
 });
