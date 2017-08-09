@@ -30,12 +30,40 @@ h1 {
   display: none;
 }
 
+.contact {
+  font-size: 1.2em;
+}
+
 #header {
   display: none;
 }
 
-#header, .about-me, .projects, .contact {
+#header, .about-me, .project, .contact {
   background-color: white;
   background-image: url("images/border.png");
   background-size: 100% 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  /*.menu-button {
+    font-size: 2em;
+  }
+
+  .about-me {
+    font-size: 2em;
+  }
+
+  .project-content {
+    font-size: 2em;*/
+  /*}*/
+}
+
+@media only screen and (min-width: 1000px) {
+  .menu-button {
+    display: none;
+  }
+
+  ul {
+    display:inline;
+  }
 }

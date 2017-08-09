@@ -25,16 +25,15 @@ Project.prototype.displayProject = function () {
   $project.find('h2').text(this.name);
   $project.find('img').attr('src', this.image);
   $project.find('p').text(this.description);
-  $project.find('a').attr('href', this.link);
   $project.removeClass('template');
   $('.projects').append($project);
 
 };
 
 //project variables
-var salmonCookies = new Project('Salmon Cookies', 'images/salmon.png', 'This was a school project which involved setting up a cookie store with several locations.  Each store tracked the number of cookies sold and tallied the totals in a table.', 'https://github.com/jrzollin/cookie-stand');
+var salmonCookies = new Project('Salmon Cookies', 'styles/images/salmon.png', 'This was a school project which involved setting up a cookie store with several locations.  Each store tracked the number of cookies sold and tallied the totals in a table.', 'https://github.com/jrzollin/cookie-stand');
 
-var busMall = new Project('Bus Mall', 'images/vault-tec.png', 'This was a school project which involved setting up a survey where you would click on one of three randomly generated images out of a pool.  The images tracked how many times they were shown and how many times they were clicked.  The results were displayed on a chart.', 'https://github.com/jrzollin/bus-mall');
+var busMall = new Project('Bus Mall', 'styles/images/vault-tec.png', 'This was a school project which involved setting up a survey where you would click on one of three randomly generated images out of a pool.  The images tracked how many times they were shown and how many times they were clicked.  The results were displayed on a chart.', 'https://github.com/jrzollin/bus-mall');
 
 
 
