@@ -18,6 +18,7 @@ Project.prototype.displayProject = function(){
   $project.find('img').attr('src', this.image);
   $project.find('p').text(this.description);
   $project.removeClass('template');
+  return $project;
 };
 
 //projects function calls
