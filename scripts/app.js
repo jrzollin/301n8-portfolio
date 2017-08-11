@@ -9,6 +9,7 @@ function Project(rawDataObject){
   this.name = rawDataObject.name;
   this.image = rawDataObject.image;
   this.description = rawDataObject.description;
+  this.created = rawDataObject.created;
 }
 
 //adding projects to the DOM
@@ -16,12 +17,17 @@ Project.prototype.displayProject = function(){
   var $project = $('section.template').clone();
   $project.find('h2').text(this.name);
   $project.find('img').attr('src', this.image);
-  $project.find('p').text(this.description);
+  $project.find('p.project-content').text(this.description);
+  $project.find('.time-stamp').text(this.created);
   $project.removeClass('template');
   return $project;
 };
 
 //projects function calls
+rawData.sort(function(a,b){
+  return (new Date(b.created)) - (new Date(a.created));
+});
+
 rawData.forEach(function(project){
   projects.push(new Project(project));
 });
