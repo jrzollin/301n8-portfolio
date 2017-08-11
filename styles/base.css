@@ -39,21 +39,29 @@ p {
   font-size: 100%;
 }
 
-/*@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 750px) {
   h1 {
     font-size: 4em;
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   li {
-    font-size: 2.4em;
+    font-size: 2em;
   }
-}*/
 
-@media only screen and (min-width:1000px) {
+  p {
+    font-size: 1em;
+  }
+
+  body{
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-width:1050px) {
   h1 {
     font-size: 4em;
   }
@@ -67,6 +75,10 @@ p {
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 1em;
+  }
+
+  body {
+    background-size: 60%;
   }
 }

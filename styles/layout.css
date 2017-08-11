@@ -35,10 +35,9 @@ li {
   margin-top: 1.5em;
 }
 
-.about-me {
+.about-me, .projects, .contact {
   width: 80%;
   margin: auto;
-  margin-bottom: 3em;
 }
 
 p {
@@ -46,9 +45,9 @@ p {
   margin: 2em;
 }
 
-.projects, .contact {
-  width: 80%;
-  margin: auto;
+.project {
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .contact {
@@ -72,23 +71,21 @@ p {
 }
 
 .project-img {
-  width: 80%;
-  margin-left: 10%;
+  width: 60%;
 }
 
 @media only screen and (min-width: 750px) {
-  /*.project-img {
-    width: 40%;
-    margin-left: 2em;
+  li {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
-  .project-content {
-
-
-  }*/
+  .project-img {
+    width: 50%;
+  }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   #header {
     width: 65%;
   }
@@ -107,7 +104,7 @@ p {
   }
 
   .project-img{
-    width: 30%;
+    width: 50%;
   }
 
 }
