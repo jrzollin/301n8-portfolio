@@ -35,10 +35,9 @@ li {
   margin-top: 1.5em;
 }
 
-.about-me {
+.about-me, .projects, .contact {
   width: 80%;
   margin: auto;
-  margin-bottom: 3em;
 }
 
 p {
@@ -46,15 +45,13 @@ p {
   margin: 2em;
 }
 
-.projects, .contact {
-  width: 80%;
-  margin: auto;
-  height: 5em;
+.project {
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .contact {
   text-align: center;
-  font-size: 1.2em;
 }
 
 #email, #github{
@@ -62,4 +59,52 @@ p {
   width: 96%;
   margin: auto;
   margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.template {
+  display: none;
+}
+
+.project-header {
+  margin: 2em;
+}
+
+.project-img {
+  width: 60%;
+}
+
+@media only screen and (min-width: 750px) {
+  li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .project-img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  #header {
+    width: 65%;
+  }
+
+  #nav {
+    text-align: center;
+  }
+
+  li {
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+  }
+
+  .projects, .about-me, .contact {
+    width: 65%;
+  }
+
+  .project-img{
+    width: 50%;
+  }
+
 }

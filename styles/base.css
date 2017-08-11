@@ -19,6 +19,11 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
 ul {
 }
 
@@ -32,4 +37,48 @@ a {
 
 p {
   font-size: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  li {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  body{
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-width:1050px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.1em;
+  }
+
+  li {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  body {
+    background-size: 60%;
+  }
 }

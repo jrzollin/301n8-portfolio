@@ -26,16 +26,61 @@ h1 {
 
 .projects, .contact {
   font-family: 'Roboto', sans-serif;
-  background-color: white;
   display: none;
+}
+
+.projects {
+  border: none;
+}
+
+.project {
+  background-color: white;
+}
+
+.contact {
+  font-size: 1.2em;
+  background-color: white;
 }
 
 #header {
   display: none;
 }
 
-#header, .about-me, .projects, .contact {
+#header, .about-me, .project, .contact {
   background-color: white;
   background-image: url("images/border.png");
   background-size: 100% 100%;
+}
+
+@media only screen and (min-width: 750px) {
+
+  .menu-button {
+    font-size: 2em;
+  }
+
+  .about-me {
+    font-size: 1.5em;
+  }
+
+  .project-content {
+    font-size: 1.5em;
+  }
+
+  .contact {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .menu-button {
+    display: none;
+  }
+
+  ul {
+    display:inline;
+  }
+
+  .contact {
+    font-size: 2em;
+  }
 }
