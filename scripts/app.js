@@ -18,14 +18,39 @@ Project.prototype.displayProject = function(){
   return newTemplate(this);
 };
 
-//projects function calls
-rawData.sort(function(a,b){
-  return (new Date(b.created)) - (new Date(a.created));
-});
+//get projects data from local storage or .json
+Project.fetchData = function(){
+  if(localStorage.projectData){
+    Project.loadData(JSON.parse(localStorage.projectData));
+  } else {
+    $.getJSON('data/projects.json', function(data){
+      localStorage.projectData = JSON.stringify(data);
+      Project.loadData(data);
+    });
+  }
+}
 
-rawData.forEach(function(project){
-  projects.push(new Project(project));
-});
+//Add project data to projects array
+Project.loadData = function(projectData){
+  //sort the data by most recent
+  projectData.sort(function(a,b){
+    return (new Date(b.created)) - (new Date(a.created));
+  });
+  //push to projects array
+  projectData.forEach(function(project){
+    projects.push(new Project(project));
+  });
+
+}
+
+//projects function calls
+// rawData.sort(function(a,b){
+//   return (new Date(b.created)) - (new Date(a.created));
+// });
+
+// rawData.forEach(function(project){
+//   projects.push(new Project(project));
+// });
 
 projects.forEach(function(project){
   $('.projects').append(project.displayProject());
