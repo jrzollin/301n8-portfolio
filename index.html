@@ -10,6 +10,14 @@
     <link rel="stylesheet" type="text/css" href="styles/modules.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script id="template" type="text/x-handlebars-template">
+      <div class="project">
+        <h2 class="project-header">{{name}}</h2>
+        <img src="{{image}}" class="project-img">
+        <p class="project-content">{{description}}</p>
+        <p class="finished-on">This project was finished on <span class="time-stamp">{{created}}</span></p>
+      </div>
+    </script>
   </head>
   <body>
     <div id="header">
@@ -28,20 +36,13 @@
       <p>Currently I am learning to use HTML, CSS, JavaScript and JQuery.</p>
     </div>
     <div class="projects tab-content">
-      <section class="template">
-        <div class="project">
-          <h2 class="project-header"></h2>
-          <img src="" class="project-img">
-          <p class="project-content"></p>
-          <p class="finished-on">This project was finished on <span class="time-stamp"></span></p>
-        </div>
-      </section>
     </div>
     <div class="contact tab-content">
       <a href="mailto: jrzollin@yahoo.com" id="email">Email: jrzollin@yahoo.com</a>
       <a href="https://github.com/jrzollin" id="github">GitHub</a>
     </div>
     <script src="vendor/scripts/jquery-3.2.1.js"></script>
+    <script src="vendor/scripts/handlebars-v4.0.10.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/app.js"></script>
   </body>

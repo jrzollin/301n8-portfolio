@@ -14,13 +14,15 @@ function Project(rawDataObject){
 
 //adding projects to the DOM
 Project.prototype.displayProject = function(){
-  var $project = $('section.template').clone();
-  $project.find('h2').text(this.name);
-  $project.find('img').attr('src', this.image);
-  $project.find('p.project-content').text(this.description);
-  $project.find('.time-stamp').text(this.created);
-  $project.removeClass('template');
-  return $project;
+  // var $project = $('section.template').clone();
+  // $project.find('h2').text(this.name);
+  // $project.find('img').attr('src', this.image);
+  // $project.find('p.project-content').text(this.description);
+  // $project.find('.time-stamp').text(this.created);
+  // $project.removeClass('template');
+  // return $project;
+  var newTemplate = Handlebars.compile($('#template').text());
+  return newTemplate(this);
 };
 
 //projects function calls
