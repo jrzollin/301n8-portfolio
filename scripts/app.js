@@ -40,21 +40,11 @@ Project.loadData = function(projectData){
   projectData.forEach(function(project){
     projects.push(new Project(project));
   });
-
+  //call function to add projects to DOM
+  projects.forEach(function(project){
+    $('.projects').append(project.displayProject());
+  });
 }
-
-//projects function calls
-// rawData.sort(function(a,b){
-//   return (new Date(b.created)) - (new Date(a.created));
-// });
-
-// rawData.forEach(function(project){
-//   projects.push(new Project(project));
-// });
-
-projects.forEach(function(project){
-  $('.projects').append(project.displayProject());
-});
 
 //header functions==============================================================
 
