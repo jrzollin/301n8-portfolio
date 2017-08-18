@@ -1,0 +1,110 @@
+#header {
+  width: 80%;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+h1 {
+  width: 90%;
+  margin: .8em auto;
+}
+
+#nav {
+  padding-bottom: 2em;
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-left: .1em;
+  margin-right: .1em;
+}
+
+.menu-button {
+  width: 38%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.about-me, .projects, .contact {
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  margin: 2em;
+}
+
+.project {
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+#email, #github{
+  display: block;
+  width: 96%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.template {
+  display: none;
+}
+
+.project-header {
+  margin: 2em;
+}
+
+.project-img {
+  width: 60%;
+}
+
+@media only screen and (min-width: 750px) {
+  li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .project-img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  #header {
+    width: 65%;
+  }
+
+  #nav {
+    text-align: center;
+  }
+
+  li {
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+  }
+
+  .projects, .about-me, .contact {
+    width: 65%;
+  }
+
+  .project-img{
+    width: 50%;
+  }
+
+}
