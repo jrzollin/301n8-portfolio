@@ -29,21 +29,21 @@ var app = app || {};
   }
 
   //show each section, checks for and removes previously displayed section
-  headerFunctions.showSection = function(){
-    $('#nav li').on('click', function(e){
-      e.preventDefault();
-      var selected = $(this).attr('id');
-      $('.tab-content:not(.' + selected + ')').fadeOut(500);
-      $('.tab-content').is(':visible') ? $('.' + selected).delay(500).fadeIn(500) : $('.' + selected).fadeIn(500);
-    });
-  }
+  // headerFunctions.showSection = function(){
+  //   $('#nav li').on('click', function(e){
+  //     e.preventDefault();
+  //     var selected = $(this).attr('id');
+  //     $('.tab-content:not(.' + selected + ')').fadeOut(500);
+  //     $('.tab-content').is(':visible') ? $('.' + selected).delay(500).fadeIn(500) : $('.' + selected).fadeIn(500);
+  //   });
+  // }
 
   //call header functions
   $(document).ready(function(){
     headerFunctions.showHeader();
     headerFunctions.showMenu();
     headerFunctions.hideMenu();
-    headerFunctions.showSection();
+    // headerFunctions.showSection();
   });
 
   module.headerFunctions = headerFunctions;
