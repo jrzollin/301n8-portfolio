@@ -39,13 +39,37 @@ var app = app || {};
     });
   }
 
+  const aboutController = {};
+
+  aboutController.index = function(){
+    $('.tab-content:not(.about-me)').fadeOut(500);
+    $('.tab-content').is(':visible') ? $('.about-me').delay(500).fadeIn(500) : $('.about-me').fadeIn(500);
+  }
+
+  const projectsController = {};
+
+  projectsController.index = function(){
+    $('.tab-content:not(.projects)').fadeOut(500);
+    $('.tab-content').is(':visible') ? $('.projects').delay(500).fadeIn(500) : $('.projects').fadeIn(500);
+  }
+
+  const contactController = {};
+
+  contactController.index = function(){
+    $('.tab-content:not(.contact)').fadeOut(500);
+    $('.tab-content').is(':visible') ? $('.contact').delay(500).fadeIn(500) : $('.contact').fadeIn(500);
+  }
+
   //call header functions
   $(document).ready(function(){
     headerFunctions.showHeader();
     headerFunctions.showMenu();
     headerFunctions.hideMenu();
-    headerFunctions.showSection();
+    // headerFunctions.showSection();
   });
 
   module.headerFunctions = headerFunctions;
+  module.aboutController = aboutController;
+  module.projectsController = projectsController;
+  module.contactController = contactController;
 })(app);
