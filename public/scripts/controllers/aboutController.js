@@ -6,12 +6,12 @@ var app = app || {};
   const aboutController = {};
 
   aboutController.index = function(){
-    $('#nav li').on('click', function(e){
-      e.preventDefault();
-      var selected = $(this).attr('id');
-      $('.tab-content:not(.' + selected + ')').fadeOut(500);
-      $('.tab-content').is(':visible') ? $('.' + selected).delay(500).fadeIn(500) : $('.' + selected).fadeIn(500);
-    });
+    // $('#nav li').on('click', function(e){
+    //   e.preventDefault();
+      // var selected = $(this).attr('id');
+      $('.tab-content:not(.about-me)').fadeOut(500);
+      $('.tab-content').is(':visible') ? $('.about-me').delay(500).fadeIn(500) : $('.about-me').fadeIn(500);
+    // });
   }
 
   module.aboutController = aboutController;

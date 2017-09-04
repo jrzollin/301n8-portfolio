@@ -39,12 +39,14 @@ var app = app || {};
   // }
 
   //call header functions
-  $(document).ready(function(){
+  // $(document).ready(function(){
+  const home = {};
+  home.index = function(){
     headerFunctions.showHeader();
     headerFunctions.showMenu();
     headerFunctions.hideMenu();
     // headerFunctions.showSection();
-  });
-
+  };
+  module.home = home;
   module.headerFunctions = headerFunctions;
 })(app);
