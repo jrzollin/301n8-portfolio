@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jrzollin/301n8-portfolio#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "superagent": "^3.6.0"
   }
 }
