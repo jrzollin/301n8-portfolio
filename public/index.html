@@ -18,6 +18,15 @@
         <p class="finished-on">This project was finished on <span class="time-stamp">{{created}}</span></p>
       </div>
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <div class="project">
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p class="project-content">Created: {{created_at}}</p>
+        <p class="project-content">Last updated: {{updated_at}}</p>
+      </div>
+    </script>
   </head>
   <body>
     <div id="header">
@@ -43,7 +52,17 @@
     </div>
     <script src="vendor/scripts/jquery-3.2.1.js"></script>
     <script src="vendor/scripts/handlebars-v4.0.10.js"></script>
-    <script src="scripts/app.js"></script>
+
+    <script src="scripts/model/model.js"></script>
+    <script src="scripts/view/view.js"></script>
+    <script src="scripts/controller/controller.js"></script>
+
+    <script src="scripts/model/githubToken.js"></script>
+
+    <!-- <script src="scripts/view/repoView.js"></script> -->
+    <script src="scripts/model/repo.js"></script>
+
+    <!-- <script src="scripts/app.js"></script> -->
     <script>app.Project.fetchData();</script>
   </body>
 </html>
