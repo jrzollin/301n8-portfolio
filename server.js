@@ -12,7 +12,7 @@ app.get('/repos', (req, res) => {
     .set('Authorization', `token ${process.env.GITHUB_TOKEN}`)
     .end((err, result) => {
       if(err) console.log(err);
-      res.send(result);
+      res.send(result.body);
     });
 });
 
