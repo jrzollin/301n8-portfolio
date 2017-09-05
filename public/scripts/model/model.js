@@ -6,7 +6,10 @@ var app = app || {};
 
   const home = {};
 
-  home.init = function(){}
+  home.init = function(){
+    // Project.fetchData();
+  }
+
   //project constructor
   function Project(rawDataObject){
     this.name = rawDataObject.name;
